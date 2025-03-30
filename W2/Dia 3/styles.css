@@ -1,0 +1,39 @@
+h1 {
+    color: #106603; /* Verde oscuro mi color favorito */
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+  }
+
+p {
+    color: blue;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+  }
+
+  #customLinks {
+    font-size: 16px;
+    line-height: 1.2;
+
+  }
+
+  .customList {
+    list-style-type: disc;
+    line-height: 1.2;
+    color: blue;
+  }
+
+  nav {
+    background-color: #dddddd;
+    color: white;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  nav li {
+    color: blue;
+    list-style: none;
+    display: inline;
+    padding: 1.1em;
+  }

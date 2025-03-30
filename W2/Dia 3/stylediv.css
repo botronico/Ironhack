@@ -1,0 +1,49 @@
+h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+body {
+    background-color: gray;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    border: 2px solid #ff0000;
+    height: 150px;
+    background-color: white;
+    text-align: center;
+}
+
+.menu {
+    border: 2px solid #fffb00;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.leftSide {
+    border: none;
+    width: 50%;
+    height: 200px;
+    background-color: rgb(116, 116, 116);
+    float: left;
+    text-align: center;
+}
+
+.rightSide {
+    border: none;
+    width: 50%;
+    height: 200px;
+    background-color: rgb(213, 213, 213);
+    float: right;
+    text-align: center;
+}
+
+.footer {
+    border: 2px solid pink;
+    height: 50px;
+    background-color: white;
+    clear: both;
+    text-align: center;
+}

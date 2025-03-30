@@ -1,0 +1,35 @@
+h1{
+    color: rgb(5, 100, 0);
+    font-display: bold;
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(164, 205, 170);
+    padding: 10px;
+    text-align: left;
+    align-content: center;
+    width: 100%;
+}
+
+.tableSeparate{
+    border-collapse: separate;
+    border-spacing: 10px 20px;
+    empty-cells: hide;
+
+}
+
+.table{
+    border-collapse: collapse; 
+    width: 100%;     
+}
+
+.table th{
+    background-color: rgb(164, 205, 170);
+    padding: 10px;
+}
+
+.table td{
+    padding: 5px;
+    text-align: center;
+}

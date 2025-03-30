@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b5d7ac;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+  
+.header {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-color: #728a6c;
+    text-align: center;
+    padding: 20px 20px;
+}
+  
+nav {
+    background-color: #556550;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+  
+nav a {
+    color: #b5d7ac;
+    margin: 0 15px;
+    text-decoration: none;
+}
+  
+nav a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 28px;
+    color: black;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 16px;
+    color: white;
+}
+
+h4 {
+    font-size: 16px;
+    color: black;
+    padding-bottom: 5px;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 14px;
+    color: black;
+    line-height: 1.7;
+    letter-spacing: 0.3px;
+    text-align: justify;
+    text-indent: 20px;
+    margin-bottom: 15px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+
+section {
+    padding: 10px;
+}
+  
+.articulo {
+    background: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(65, 65, 65, 0.659);
+    text-align: justify;
+    column-count: 1;
+    column-gap: 30px;
+    text-indent: 20px;
+    letter-spacing: 0.5px;
+    padding: 10px 30px 10px 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    background-color: white;
+    margin-top: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #acacac;
+    padding: 10px;
+}
+  
+table thead {
+    background-color: #eee;
+}
+  
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 40px;
+}

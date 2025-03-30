@@ -1,0 +1,31 @@
+h1 {
+    color: #106603; /* Verde oscuro mi color favorito */
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    border: 3px solid #2b00ff;
+    background-color: white;
+
+  }
+
+p {
+    color: blue;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .bgTest {
+    background-image: linear-gradient(to top, rgb(83, 83, 83), rgb(213, 213, 213));
+    color: white;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 1.2em;
+    text-align: center;
+  }
+  html {
+    background-image: url('imagenes/flores.png');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 10em;
+  }
