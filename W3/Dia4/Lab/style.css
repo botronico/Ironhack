@@ -12,7 +12,7 @@ p {
 }
 
 .element    {
-
+    background-color: #0b911b;
     border: 1px solid #000000;
     height: 100px;    
     width: 100px;
@@ -25,10 +25,10 @@ p {
                 rotar 2s linear infinite;
 }
 
-@keyframes changeColor {
+/* @keyframes changeColor {
     from {background-color: #0b911b;}
     to {background-color: #4c15ff;}
-}
+} */
 
 @keyframes move-right {
     from {transform: translateX(0);}
@@ -41,5 +41,6 @@ p {
 
 .element:hover {
     border-radius: 50%;
+    background-color: blue;
 
 }
