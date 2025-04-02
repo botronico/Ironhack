@@ -1,0 +1,38 @@
+h1 {
+    color: #0b911b;
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    color: #0b911b;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bernard   {
+    background-image: url(media/bernard-bernoulli.png);
+    width: 112px;
+    height: 156px;
+    
+
+    animation: 
+        walk 0.6s steps(6) infinite, 
+        move 4s linear normal infinite,
+        mirror 4s steps(1) normal infinite;
+}
+
+@keyframes walk {
+    to {background-position: -672px; }
+}
+
+@keyframes move {
+    0% {translate: 0;}
+    50% {translate: 600px;}        
+    100% {translate: 0;}
+}
+
+@keyframes mirror {
+   0% {scale: 1 1;}
+   50% {scale: -1 1;}
+}

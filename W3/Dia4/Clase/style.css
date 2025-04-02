@@ -1,0 +1,48 @@
+h1 {
+    color: #0b911b;
+    font-size: 30px;
+    text-align: center;
+}
+.element    {
+
+    background-color: #11ff00;
+    border: 1px solid #000000;
+    height: 100px;    
+    width: 100px;
+    margin: 5px;
+    border-radius: 10%;
+    transition: all 0.5s ease;
+    /* transform: rotate(5deg) scale(1.2) translate(10px, 10px) skew(10deg); */
+    /* transform: rotate(25deg) translate(150px, 100px); */
+    /* transform: rotate(360deg); */
+    /* transform: translate(100px); */
+    animation:  changeColor 1s ease-in-out infinite alternate,
+                move-right 2s ease-in-out infinite alternate,
+                rotar 2s ease-in-out infinite alternate;
+                /* move-and-rotate 2s linear infinite alternate; */
+                animation-composition: additive;
+
+}
+
+@keyframes changeColor {
+    from {background-color: #11ff00;}
+    to {background-color: #ff1515;}
+}
+
+@keyframes move-right {
+    from {transform: translateX(0);}
+    to {transform: translateX(500px);}
+}
+@keyframes rotar {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/* @keyframes move-and-rotate {
+    from {
+        transform: translateX(0) rotate(0deg);
+    }
+    to {
+        transform: translateX(500px) rotate(360deg);
+    }       
+} */
