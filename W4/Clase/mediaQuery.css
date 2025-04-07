@@ -1,0 +1,27 @@
+.container {
+    background-color: var(--color, gray);
+    min-height: 200px;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (width < 550px) {
+    .container {
+        background-color: indigo;
+    }
+}
+
+@media (width: 551px) and (width: 749px) {
+    .container {
+        background-color: gray
+    }
+}
+
+@media (width >= 750px) {
+    .container {
+        background-color: green;
+    }
+}

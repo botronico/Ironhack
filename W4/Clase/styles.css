@@ -1,0 +1,35 @@
+header, .page, .footer {
+    background-color: #777777;
+    color: #ffffff;
+    min-height: 150px;
+}
+
+.menu {
+    min-height: 200px;
+    display: inline-block;
+    background-color: #444444;
+    width: 30%;
+}
+
+.content {
+    min-height: 200px;
+    display: inline-block;
+    background-color: #222222;
+    width: 70%;
+}
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 50px;
+}
+.page {
+    display: flex;
+}
+
+.headerImg {
+    min-height: 200px;
+    max-height: 600px;
+    min-width: 100px;
+    max-width: 100%;
+}
