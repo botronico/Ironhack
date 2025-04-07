@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bombas</title>
+  <style>
+    body {
+      background: #222;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    .contenedor {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 20px;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .bomba {
+      width: 100px;
+      height: 100px;
+      background-size: cover;
+      background-position: center;
+      transition: background-image 0.3s;
+    }
+
+    /* Imagen de bomba por defecto */
+    .bomba {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/2910/2910768.png');
+    }
+
+    /* Las que explotan */
+    .bomba.explode:hover {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/3132/3132693.png');
+    }
+
+    /* La que tiene agua/extintor */
+    .bomba.safe:hover {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/728/728093.png');
+    }
+
+    /* EXTRA: mensaje oculto con opacity */
+    #mensaje {
+      opacity: 0;
+      transition: opacity 0.5s;
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    .bomba.safe:hover ~ #mensaje {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>¿Cuál bomba es segura?</h1>
+  <div class="contenedor">
+    <div class="bomba explota"></div>
+    <div class="bomba explota"></div>
+    <div class="bomba explota"></div>
+    <div class="bomba explota"></div>
+    <div class="bomba segura"></div>
+    <div class="bomba explota"></div>
+    <div class="bomba explota"></div>
+    <div class="bomba explota"></div>
+    <div class="bomba explota"></div>
+  </div>
+
+  <div id="mensaje">¡Encontraste la bomba con agua! 💧</div>
+
+</body>
+</html>

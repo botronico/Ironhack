@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(61, 61, 61);
+}
+
+div{
+    font-size: 18px;
+    color: rgb(60, 255, 0);
+    padding: 10px;
+
+}
+
+#myDiv{
+    color: green;
+}
+
+.item{
+    color: red;
+}
+
+div.item{
+    border: 2px solid black;
+}
+
+.otroDiv{
+    color: blue;
+}
+
+.classic{
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+
+.back{
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+button.classic.primary.large{
+    background-color: red;
+}
+
+[disabled]{
+    background-color: grey;
+}
+
+a[tabindex="2"]{
+    background-color: yellow;
+}
+
+[data-mood^="happy"]{
+    color: green;
+}
+
+[data-mood*="neutral"]{
+    color: rgb(223, 108, 198);
+    font-size: 24px;
+}
