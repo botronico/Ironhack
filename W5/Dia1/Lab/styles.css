@@ -1,5 +1,6 @@
 h1 {
-    color: blue;
+    color: green;
+    text-align: center;
     font-size: 2em;
 }
 
@@ -15,12 +16,12 @@ input {
     background-color: #f9f9f9;
 }
 input:focus {
-    border-color: blue;
+    border-color: rgb(14, 172, 0);
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
-    margin: 0;
+    background-color: #fbfbfb;
+    margin-left: 10;
     padding: 20px;
 }
