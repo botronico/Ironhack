@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pizzastyle.css">
+    <title>Pizzería Da Mario - Pedido</title>
+
+</head>
+<body>
+    <h1>Pizzería Da Mario</h1>
+    <h1>Formulario de Pedido</h1>
+
+    <form>
+        <div class="form">
+            <label for="title">Título</label>
+            <select id="title" name="title">
+                <option value="Sr">Sr.</option>
+                <option value="Sra">Sra.</option>
+                <option value="Otre">Otre</option>
+            </select>
+        </div>
+        <div class="form">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Ingrese su nombre" required>
+        </div>
+
+        <div class="form">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" placeholder="Ingrese su número de teléfono" required>
+        </div>
+
+        <div class="form">
+            <label for="pizzaType">Tipo de Pizza</label>
+            <select id="pizzaType" name="pizzaType">
+                <option value="margarita">Margarita</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="cuatroQuesos">Cuatro Quesos</option>
+                <option value="vegetariana">Vegetariana</option>
+                <option value="hawaiana">Hawaiana</option>
+                <option value="barbacoa">Barbacoa</option>
+            </select>
+        </div>
+
+            <label for="size">Tamaño</label>
+            <select id="size" name="size">
+                <option value="personal">Personal</option>
+                <option value="mediana">Mediana</option>
+                <option value="familiar">Familiar</option>
+            </select>
+        <fieldset>
+            <legend>Ingredientes extras</legend>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="extras" value="extraQueso">Extra Queso</label>
+                <label><input type="checkbox" name="extras" value="jamon">Jamón</label>
+                <label><input type="checkbox" name="extras" value="aceitunas">Aceitunas</label>
+                <label><input type="checkbox" name="extras" value="champinones">Champiñones</label>
+            </div>          
+        </div>
+        </fieldset>
+
+        <div class="form">
+            <label>Método de Entrega</label>
+            <div class="radio-group">
+                <label><input type="radio" name="deliveryMethod" value="delivery" required> Enviar a casa</label>
+                <label><input type="radio" name="deliveryMethod" value="pickup" required> Venir a buscar</label>
+            </div>
+        </div>
+
+        <div class="form">
+            <label for="comments">Comentarios</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Escriba aquí sus comentarios..."></textarea>
+        </div>
+
+        <button type="submit">Realizar Pedido</button>
+    </form>
+</body>
+</html>
+
+<fieldset>
+    <legend>Nombre completo</legend>

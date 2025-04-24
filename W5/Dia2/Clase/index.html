@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formularios 2</title>
+</head>
+<body>
+    <form action="index.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        <br>
+        <input type="radio" name="genero" value="masculino" required> Masculino<br>
+        <input type="radio" name="genero" value="femenino" required> Femenino<br><br>
+        <input type="checkbox" name="terminos" required> Acepto los términos y condiciones<br><br>
+        <br>
+        <input type="color" name="color" required><br><br>
+        <hr>
+        <br>
+        <select>
+            <option selected disabled>Selecciona una opción</option>
+            <hr>
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+            <option value="opcion4">Opción 4</option>
+            <option value="opcion5">Opción 5</option>
+            <hr>
+            <option value="opcion6">Opción 6</option>
+            <option value="opcion7">Opción 7</option>
+            <option value="opcion8">Opción 8</option>
+            <option value="opcion9">Opción 9</option>
+            <option value="opcion10">Opción 10</option>
+        </select>
+        <button type="submit">Enviar</button>
+
+<br><br>
+        <select>
+            <option selected disabled>Selecciona una opción</option>
+            <optgroup label="Grupo 1">
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+                <option value="opcion3">Opción 3</option>
+            </optgroup>
+            <optgroup label="Grupo 2">
+                <option value="opcion4">Opción 4</option>
+                <option value="opcion5">Opción 5</option>
+                <option value="opcion6">Opción 6</option>
+            </optgroup>
+        </select>
+
+        <button type="submit">Enviar</button>
+
+        <br><br>
+
+        <input type="file" name="foto" accept=".jpg, .png, .pdf" required multiple>
+</body>
+</html>
