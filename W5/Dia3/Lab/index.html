@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Alta de Programadores</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,8 +17,8 @@
                 <div class="col">
                     <label for="nombre" class="form-label">Nombre</label>
                     <div class="input-group">
-                        <span class="input-group-text">@</span>
-                        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                        <span class="input-group-text"><i class="bi bi-person-add"></i></span>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" autocomplete="name">
                     </div>
                 </div>
                 <div class="col">
@@ -28,15 +30,15 @@
             <div class="row mb-3">
                 <div class="col">
                     <label for="telefono" class="form-label">Teléfono</label>
-                    <input type="text" class="form-control" id="telefono" placeholder="Teléfono">
+                    <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
                 </div>
                 <div class="col">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email">
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
                 </div>
             </div>
 
-            <div class="mb-3">
+            <div class="mb-5">
                 <label for="oficina" class="form-label">Oficina</label>
                 <select class="form-select" id="oficina">
                     <option selected>Selecciona una ciudad</option>
@@ -49,48 +51,76 @@
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Lenguajes que conoces:</label>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="lenguaje1">
-                            <label class="form-check-label" for="lenguaje1">JavaScript</label>
-                            <input type="range" class="form-range" min="0" max="5" id="customRange2">
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="lenguaje2">
-                            <label class="form-check-label" for="lenguaje2">Python</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="lenguaje3">
-                            <label class="form-check-label" for="lenguaje3">Java</label>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="lenguaje4">
-                            <label class="form-check-label" for="lenguaje4">C#</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="lenguaje5">
-                            <label class="form-check-label" for="lenguaje5">Ruby</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="lenguaje6">
-                            <label class="form-check-label" for="lenguaje6">PHP</label>
-                        </div>
-                    </div>
+                <label class="form-label">Lenguajes que conoces: (Selecciona el nivel)</label>
+                <div class="row mb-2 mt-3 align-items-center">
+                  <div class="col-md-3 mb-2">
+                    <input class="form-check-input me-2" type="checkbox" id="lenguaje1">
+                    <label class="form-check-label" for="lenguaje1">JavaScript</label>
+                  </div>
+                  <div class="col-3 mb-2">
+                    <input type="range" class="form-range" min="0" max="5" id="range1">
+                  </div>
                 </div>
-            </div>
+              
+                <div class="row mb-2 align-items-center">
+                  <div class="col-md-3 mb-2">
+                    <input class="form-check-input me-2" type="checkbox" id="lenguaje2">
+                    <label class="form-check-label" for="lenguaje2">Python</label>
+                  </div>
+                  <div class="col-3 mb-2">
+                    <input type="range" class="form-range" min="0" max="5" id="range2">
+                  </div>
+                </div>
+              
+                <div class="row mb-2 align-items-center">
+                  <div class="col-md-3 mb-2">
+                    <input class="form-check-input me-2" type="checkbox" id="lenguaje3">
+                    <label class="form-check-label" for="lenguaje3">Java</label>
+                  </div>
+                  <div class="col-3 mb-2">
+                    <input type="range" class="form-range" min="0" max="5" id="range3">
+                  </div>
+                </div>
+              
+                <div class="row mb-2 align-items-center">
+                  <div class="col-md-3 mb-2">
+                    <input class="form-check-input me-2" type="checkbox" id="lenguaje4">
+                    <label class="form-check-label" for="lenguaje4">C#</label>
+                  </div>
+                  <div class="col-3 mb-2">
+                    <input type="range" class="form-range" min="0" max="5" id="range4">
+                  </div>
+                </div>
+              
+                <div class="row mb-2 align-items-center">
+                  <div class="col-md-3 mb-2">
+                    <input class="form-check-input me-2" type="checkbox" id="lenguaje5">
+                    <label class="form-check-label" for="lenguaje5">Ruby</label>
+                  </div>
+                  <div class="col-3 mb-2">
+                    <input type="range" class="form-range" min="0" max="5" id="range5">
+                  </div>
+                </div>
+              
+                <div class="row mb-2 align-items-center">
+                  <div class="col-md-3 mb-2">
+                    <input class="form-check-input me-2" type="checkbox" id="lenguaje6">
+                    <label class="form-check-label" for="lenguaje6">PHP</label>
+                  </div>
+                  <div class="col-3 mb-2">
+                    <input type="range" class="form-range" min="0" max="5" id="range6">
+                  </div>
+                </div>
+              </div>
 
-            <div class="mb-3">
+            <div class="mb-3 mt-3">
                 <label class="form-label">Especialidad preferida:</label>
-                <div class="form-check">
+                <div class="form-check mt-3">
                     <input class="form-check-input" type="radio" name="rol" id="frontend" value="frontend">
                     <label class="form-check-label" for="frontend">Front-end</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="rol" id="backend" value="backend">
+                    <input class="form-check-input" type="radio" name="rol" id="backend" value="backend" >
                     <label class="form-check-label" for="backend">Back-end</label>
                 </div>
                 <div class="form-check">
@@ -98,11 +128,11 @@
                     <label class="form-check-label" for="fullstack">Full-stack</label>
                 </div>
             </div>
-            <!-- Estos <center> </center> sale en rojo porque supongo es viejo y no se usa, pero no consegui como centrar estos botones -->
-            <center>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+
+            <div class="text-center mt-4">
+            <button type="submit" class="btn btn-success">Enviar</button>
             <button type="reset" class="btn btn-secondary">Limpiar</button>
-            </center>
+            </div>
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
